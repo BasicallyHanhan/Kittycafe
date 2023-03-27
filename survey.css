@@ -1,0 +1,145 @@
+body {
+
+    background-color: rgb(255, 255, 162);
+
+}
+
+h1 {
+    text-align: center;
+    font-size: 80px;
+    margin-top: 90px;
+    
+}
+
+#container {
+
+  margin-left: 400px;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  box-shadow: 20px 20px rgb(16, 16, 16, 0.5);
+
+    background-color: white;
+    height: 1100px;
+    width: 600px;
+    border-radius: 30px;
+    
+}
+
+.label {
+
+    display: inline-block;
+    margin-left: 250px;
+    margin-top: 20px;
+    font-size: 30px;
+
+}
+
+.input {
+    margin-left: 20px;
+    border: 1px solid black;
+    height: 35px;
+    width: 550px;
+
+    border-radius: 10px;
+
+    background-image: url("http://simpleicon.com/wp-content/uploads/pencil.png");
+    background-size: 5%;
+    background-position: left;
+    background-position: right;
+    background-repeat: no-repeat;
+
+    transition: all ease-in-out 0.4s;
+
+}
+
+.input:focus {
+
+    background-color: rgb(211, 233, 242);
+
+    background-image: none;
+    width: 530px;
+
+}
+
+.input:required {
+    border: 2px solid red;
+}
+
+.paragraph {
+    margin-left: 17px;
+    margin-top: 50px;
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+.radio {
+    width: 20px;
+    height: 20px;
+    accent-color: red;
+}
+
+.secondLabel {
+    font-size: 20px;
+    margin-left: 10px;
+    
+}
+
+.textbox {
+
+    margin-left: 20px;
+    width: 530px;
+    height: 30px;
+    border: 2px solid green;
+
+    border-radius: 15px;
+    padding: 12px 20px;
+    resize: vertical;
+    
+}
+
+.textbox:focus {
+    
+    background-color: lightgreen;
+}
+
+#submitButton {
+   margin-left: 220px;
+    margin-top: 10px;
+    background-color: lightsalmon;
+    border: none;
+
+    padding: 16px 32px;
+    cursor: pointer;
+    width: 150px;
+    color: white;
+    font-weight: bolder;
+    border-radius: 10px;
+    
+}
+#submitButton:hover {
+    width: 160px;
+    height: 50px;
+    border: 2px solid black;
+    color: black;
+    background-color: salmon;
+}
+
+.options {
+    width: 100px;
+    max-width: 500px;
+    height: 50px;
+    margin-left: 50px;
+    font-size: 18px;
+  background-color: lightgoldenrodyellow;
+  border-radius: 10px;
+  border: 2px solid coral;
+  box-shadow:  10px 5px 5px rgb(0, 0, 0, 0.2);
+}
+
+p12 {
+    color: red;
+    position: relative;
+    bottom: 1250px;
+    margin-left: 550px;
+    font-size: 28px;
+}

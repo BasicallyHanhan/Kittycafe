@@ -1,0 +1,81 @@
+body {
+    font-family: 'itim';
+}
+
+.faq-heading {
+
+    padding: 20px 60px;
+    border-bottom: gray;
+    text-align: center;
+    color: rgb(224, 175, 238);
+    font-size: 80px;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+.faq-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.line {
+    width: 60%;
+    margin: auto;
+    border-top: 4px solid #8c8b8b;
+
+}
+
+.faq-page {
+    color: hotpink;
+    cursor: url("customcursor.png"), auto;
+    padding: 30px 20px;
+    width: 60%;
+
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    margin: auto;
+
+    font-style: bold;
+}
+
+.faq-body {
+    margin: auto;
+    width: 50%;
+    padding: auto;
+    font-style: italic;
+}
+
+/*----------------------------------------------------For javascript------------------------------------------------------*/
+
+.active,
+.faq-page:hover {
+
+    background-color: rgb(255, 218, 224);
+
+}
+
+.faq-body {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+}
+
+.faq-page:after {
+     /* Unicode character for "plus" sign (+) */
+
+     content: "\02795";
+     font-size: 13px;
+     color: gray;
+     float: right;
+     margin-left: 5px;
+}
+
+.active:after {
+
+     /* Unicode character for "minus" sign (-) */
+
+     content: "\2796";
+}

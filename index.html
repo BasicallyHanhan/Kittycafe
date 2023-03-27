@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat Cafe</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mali:wght@700&family=Pacifico&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="catcafe.css">
+
+    <script defer src="catcafe.js"></script>
+
+</head>
+
+<body>
+
+    <!---------------------------------------------- LEGO SECTION --------------------------------------------------->
+
+    <h> CAT <br> <span> CAFE </span> </h>
+
+    <hr>
+
+     <!---------------------------------------------- HEADER SECTION --------------------------------------------------->
+
+     <div id="header">
+
+        <img id="logo" src="catcafe logo.png">
+
+        <ul>
+            <li><a target="_blank" href="survey.html">♡contact♡</a></li>
+            <li><a href="#" onclick="openSidebar()">♡menu♡</a></li>
+            <li><a href="#">♡home♡</a></li>
+            <li><a target="_blank" href="FAQ.html">♡about♡</a></li>
+
+     </div>
+
+     <img id="headerimage" src="https://japantoday-asset.scdn3.secure.raxcdn.com/img/store/f1/9c/77022562acf08510412a1621c1b092f9e679/hello-kitty-cafe-tokyo.png">
+     
+     <!---------------------------------------------- HEADER BUTTONS --------------------------------------------------->
+     <a href="#">
+     <img id="prices" src="https://thumbs.dreamstime.com/b/cute-cat-paw-cute-cartoon-white-kitten-paw-pink-background-kawaii-cat-foot-doodle-sparkles-isolated-vector-illustration-134503489.jpg">
+    </a>
+
+     <div class="caption">
+     <p1><a href="#">prices</a></p1>
+
+    </div>
+
+    <a href="#">
+        <img id="specials" src="https://static.boredpanda.com/blog/wp-content/uploads/2015/06/Onigiri-cat-face-omusubi-Nyan-rice-balls-5.jpg">
+       </a>
+
+       <div class="caption2">
+        <p2><a href="#">specials</a></p2>
+   
+       </div>
+
+       <!---------------------------------------------- CONTENT SECTION --------------------------------------------------->
+
+       <div class="container">
+
+        <img id="linebreak" src="https://media.istockphoto.com/vectors/pink-cat-paw-path-isolated-on-white-background-the-curved-vector-path-vector-id1298176381?k=20&m=1298176381&s=170667a&w=0&h=Xv_2-CRv4ie5dWPYz856WeTwF5q0e7ahBlAWADwjbOU=">
+        
+        <h2>HOT THIS WEEK!</h2>
+
+    </div>
+
+        <div class="container2">
+
+        <img id="coffee" src="https://cdn.thisiswhyimbroke.com/thumb/cat-shaped-marshmallows_400x333.jpg">
+           <p3>Kitty Coffee</p3>
+
+       <img id="eggrice" src="https://www.felissimo.co.jp/image_app/img.cfm?gcd=767270&typ=jpg&no=11&wh=520x1000&nn=11">
+       <p4>Paws Eggrice</p4>
+
+       <img id="riceball" src="https://pbs.twimg.com/media/FXBA2rgWAAA1s2O.jpg">
+       <p5>Cat Riceball</p5>
+
+    </div>
+
+    <!---------------------------------------------- SIDEBAR SECTION --------------------------------------------------->
+<!--This is for the menu button in the header.-->
+
+    <div id="sidebar">
+
+        <!--&times creates a multiplication sign (X)-->
+
+    <a href="#" onclick="closeSidebar()" id="closeButton">&times</a>
+    
+    <a href="#" class="sidebarOptions">Breakfast</a>
+    <a href="#" class="sidebarOptions">Lunch</a>
+    <a href="#"class="sidebarOptions">Dinner</a>
+    <a href="#" class="sidebarOptions">Drinks</a>
+    <a href="#" class="sidebarOptions">Desserts</a>
+
+</div>
+
+ <!---------------------------------------------- CANVAS --------------------------------------------------->
+ <canvas id="canvas"></canvas>
+
+</body>
+
+</html>

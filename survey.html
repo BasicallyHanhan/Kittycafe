@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Survey</title>
+
+    <link rel="stylesheet" href="survey.css">
+
+</head>
+
+<body>
+
+    <h1><i>Feedback Survey</i></h1>
+
+    <div id="container">
+
+        <form>
+            <label for="name" class="label">Name:</label>  <br><br>
+
+            <!--Patterns help with basic data validation. however they dont offer any security. They only limit what the user can enter. You should really work with the server side if yoou want a proper data validation system, as well as JavaScript.
+            in this example, I let the user write any letters, big and small, as long as it doesnt exeed 20 characters (and a minimum of 2 letters), however i didnt allow anything else.
+        more infos: https://html.com/attributes/input-pattern/?username=j -->
+            
+            <input type="text" id="name" class="input" placeholder="enter your name" required pattern="[A-Za-z]{2,20}">
+
+            <br><br>
+
+            <!--HTML already does a good job with data validation for emails so dont bother with the pattern here-->
+
+            <label for="email" class="label">Email:</label>  <br><br>
+            <input type="email" id="email" class="input" placeholder="enter your email">
+
+            <br><br>
+            
+            <label for="age" class="label">Age:</label>  <br><br>
+            <input type="number" id="age" class="input" min="6" max="120" placeholder="enter your age">
+
+            <!--Radio buttons let a user select ONLY ONE of a limited number of choices.
+            also for these ones you want to start with input first and then the label-->
+
+            <p class="paragraph">Would you recommend it?</p>
+            <input type="radio" id="yes" class="radio">
+            <label for="yes" class="secondLabel">Yes</label>
+            <br>
+            <input type="radio" id="no" class="radio">
+            <label for="no" class="secondLabel">No</label>
+            <br>
+            <input type="radio" id="maybe" class="radio">
+            <label for="maybe" class="secondLabel">Maybe</label>
+
+<p class="paragraph">How many languages do you know?</p>
+            <input type="checkbox" id="javascript" class="radio">
+            <label for="javascript" class="secondLabel">Javascript</label>
+            <br>
+            <input type="checkbox" id="java" class="radio">
+            <label for="java" class="secondLabel">Java</label>
+            <br>
+            <input type="checkbox" id="python" class="radio">
+            <label for="python" class="secondLabel">python</label>
+
+            <br><br><br>
+
+            <label for="occupation" class="paragraph">What's your occupation?</label>
+            <br><br>
+            <select id="occupation" required class="options">
+
+<option disabled selected hidden>choose</option>
+                <option>Student</option>
+                <option>working</option>
+                <option>unemployed</option>
+                <option>retired</option>
+
+            </select>
+
+            <br><br>
+
+            <label class="paragraph" for="textarea">Any comments or suggestions?</label> <br><br>
+            <!-- you can use
+
+             oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"'
+
+            to auto resize textarea so it will fit the content that the user writes.-->
+
+            <textarea id="textarea" class="textbox" placeholder="enter your comment..."></textarea>
+            <input type="submit" id="submitButton">
+
+            
+        </form>
+
+    </div>
+
+    <p12>Made by Hannah Leah</p12>
+    
+</body>
+
+</html>
